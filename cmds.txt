@@ -1,0 +1,8 @@
+0. git remote add origin [ssh] - add remote repository
+
+
+1. git init - initialize repository
+2. git status - check status
+3. git add *.txt   or *.*  - add file to stage area
+4. git commit -m "Hehe"  - commit staging files
+5. git log - show logs
