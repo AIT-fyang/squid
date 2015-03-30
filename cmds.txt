@@ -1,6 +1,6 @@
 
 
-0. git remote add origin [ssh] - add remote repository
+0. git remote add origin [ssh] - add remote repository(ssh copy from github.com)
 1. git init - initialize repository
    git config user.name fyang
    git config user.email ....
