@@ -1,6 +1,6 @@
+
+
 0. git remote add origin [ssh] - add remote repository
-
-
 1. git init - initialize repository
    git config user.name fyang
    git config user.email ....
@@ -12,6 +12,8 @@
 git branch - check branch
 git push  - push to remote
 git pull  - pull from remote
+
+
 
 
 ------------------------------------------------------------------------------------
@@ -27,4 +29,6 @@ add this key
 ssh -T acount_email
 return to local repo and git push -u origin master
 
-
+------------------------------------------------------------------------------------
+A common error
+after git add *, I forget git commit -m "Tag", and then "git push origin master"
