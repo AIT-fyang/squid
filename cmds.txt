@@ -37,6 +37,11 @@ after git add *, I forget git commit -m "Tag", and then "git push origin master"
 PULLING -- pull from remote:
 git pull origin master
 
-DIFFERENCE
+DIFFERENCE -- check what has been changed
+git diff HEAD
+
+
+staged diff
+
 UNDO
 MERGE
