@@ -2,7 +2,29 @@
 
 
 1. git init - initialize repository
+   git config user.name fyang
+   git config user.email ....
 2. git status - check status
-3. git add *.txt   or *.*  - add file to stage area
+3. git add *.txt   or add *  - add file to stage area(new or modified)
 4. git commit -m "Hehe"  - commit staging files
 5. git log - show logs
+
+git branch - check branch
+git push  - push to remote
+git pull  - pull from remote
+
+
+------------------------------------------------------------------------------------
+to connect github, try generate a ssh key, then add to git.
+here is the tutorial
+http://stackoverflow.com/questions/19660744/git-push-permission-denied-public-key
+generally speaking, remember:
+git remote add
+cd ~/.ssh
+ssh-keygeno github account
+cat ~/.ssh/id_rsa.pub
+add this key 
+ssh -T acount_email
+return to local repo and git push -u origin master
+
+
