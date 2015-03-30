@@ -34,7 +34,9 @@ A common error
 after git add *, I forget git commit -m "Tag", and then "git push origin master"
 
 -----------------------------------------MORE---------------------------------------
-PULLING
+PULLING -- pull from remote:
+git pull origin master
+
 DIFFERENCE
 UNDO
 MERGE
