@@ -1,0 +1,17 @@
+JPA - Java persistence API
+JSF - Java Server Faces go see wiki criticism about JSF.
+Hibernate - open source ORM
+
+
+------------------------------------------------------------------
+
+Force.com Apex is strongly-typed, object-oriented programming language that allows you to write code that executes on the Force.com platform. Force.com provides a lot of high-level services, such as Web services, scheduling of code execution, batch processing, and trigers -- all of which require you to write Apex.
+
+APEX(html DB) can also stands for - Oracle Application Express is a web-based software development environment.
+
+------------------------------------------------------------------
+Data mapping - is the process of creating data element mappings between two distince data models.
+
+is a process of linking different data models together using a defined set of methods to implement: data transformation or data mediation, or even merge multiple databases into a single one
+
+X12 standards are generic Electronic Data Interchange standards designed to exchange data.

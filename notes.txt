@@ -1,0 +1,25 @@
+
+-- 15digit vs digits ID
+extra 3 digits of 18 bits id are checksum.
+use 15 digits in validation rules and through API.
+API will accept the 15 digits ID as Input but will always return 18 digit ID.
+
+-- bulk API is REST-based API
+it has no limit of records, but no of batches per day.
+2000 batches per 24 hours
+
+-- Too many SOQL queries 101: 100 query in context including trigger
+-- Too many query rows: more than 2000 records returned(reference guide) 
+50001?
+
+good practice:
+https://help.salesforce.com/apex/HTViewSolution?urlname=System-LimitException-Too-many-SOQL-queries-101&language=en_US
+move soql out of loop
+
+-- batch limit 0-200
+Database.Execute(batchable, limit);
+
+-- Select count() from lead
+
+--validation rule, check picklist
+ISPICKVAL(field, value)

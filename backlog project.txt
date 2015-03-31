@@ -1,0 +1,8 @@
+change project owner
+change status
+security notes
+element for deployment
+create sub-project for QA 
+when create a sub project, just name it "QA-original project name"
+change owner to QA to "QA Backlog"
+
