@@ -1,0 +1,8 @@
+//system.debug('Returned is null?' + (pr==null));//false
+//system.debug('Returned:' + pr); PageReference[Null]
+//System.assert(true, PageReference.IsNullOrEmpty(pr));   not working
+System.assertEquals(pr, Null); //not working
+
+to check a null returned PageReference:
+System.assertEquals(null, retPageRef, 'PageReference returned should be null');
+System.assertEquals(true, ApexPages.hasMessages(ApexPages.Severity.INFO), 'Should have at some INFO messages');
