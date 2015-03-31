@@ -1,0 +1,35 @@
+﻿Developer Console – the browser-based development environment
+
+SOQL?  --  Salesforce Object Query language(SOQL)
+Different from SQL, SOQL does not support all SQL, for example, you cannot use SOQL to perform arbitrary join, or use wildcards or use calculation expressions.
+Reference:
+http://www.salesforce.com/us/developer/docs/officetoolkit/Content/sforce_api_calls_soql.htm
+
+IDE installation(we can ask help desk)
+https://developer.salesforce.com/page/Force.com_IDE_Installation
+
+Simple example of coding
+
+Sandbox
+Is a testing environment that isolate untested code changes and outright experimentation from production environment or repository.
+
+The concept of sandbox(also called a working directory, a test server or development server), is typically build into revision control software such as CVS and SVN, in which developers “check out” a copy of the source code, only after the developer has fully tested the code changes in their own sandbox should the changes be checked back into the merged with the repository and thereby made available to other developers or end users of the software.
+
+Create – look for sandbox
+Login 
+https://cs23.salesforce.com/?un=fyang%40advanceit.com.fandev
+fyang@advanceit.com.fandev
+
+__c  -- API suffix
+__r – related (look up)
+http://salesforce.stackexchange.com/questions/28708/difference-between-c-and-r
+
+WSDL – Web Service Definition Language 
+Is an XML format.  It is used to describe Web services, used to locate Web services. It is W3C recommendation.
+
+
+ 
+A simple procedure to add a functionality by coding!
+Create an Apex Class and Method -> manually test-> create a button on object->fill js->drag the created button to object layout>change the class(global modifier and webservice weird)
+
+
