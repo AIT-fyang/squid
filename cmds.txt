@@ -45,3 +45,9 @@ staged diff
 
 UNDO
 MERGE
+
+
+git checkout branch_name  -- switch to other branch
+
+
+
