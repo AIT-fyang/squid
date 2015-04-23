@@ -1,0 +1,3 @@
+search workflow
+1. in Eclipse
+2. email alert

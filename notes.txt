@@ -23,3 +23,66 @@ Database.Execute(batchable, limit);
 
 --validation rule, check picklist
 ISPICKVAL(field, value)
+
+--email template: outputpanel to add logic in template
+
+<messaging:emailTemplate subject="Welcome Back" recipientType="Contact" relatedToType="Opportunity">
+<messaging:htmlEmailBody >
+<!--Begin English (Default)-->    
+	<apex:outputPanel layout="block" rendered="{!Or(recipient.Merchant_Communication_Language__c== 'English', recipient.Merchant_Communication_Language__c == '')}">
+            Lorem Ipsum             Lorem Ipsum
+            Lorem Ipsum            Lorem Ipsum
+        </apex:outputPanel>
+<!--End English (Default)-->
+
+<!--Begin French (Default)-->    
+	<apex:outputPanel layout="block" rendered="{!Or(recipient.Merchant_Communication_Language__c== 'French')}">
+            Lorem Ipsum             Lorem Ipsum
+            Lorem Ipsum            Lorem Ipsum
+        </apex:outputPanel>
+<!--End French (Default)-->
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>
+
+reference:
+http://salesforce.stackexchange.com/questions/24975/visualforce-html-email-template-ability-to-edit-text-in-preview-before-sending
+
+--VisualForce IF and CASE expression
+{!if(condition, true value, false value)}
+equivalent to tenary expression: ? "": ""
+Sample: 
+subject="{!if(recipient.Merchant_Communication_Language__c == 'English','Welcome to Advanceit!', 'Bienvenue chez Advanceit!')}" 
+
+CASE(expression, value1, result1, value2, result2, value3, result3, else_result);
+else_result means default
+
+
+https://www.salesforce.com/docs/developer/pages/Content/pages_variables_functions.htm
+
+
+sharing rule, public group, these anything are not deployed properly. If create new group, create on production.
+
+--Invalid cross reference id 
+When execute DML command. It means there is a lookup field that has invalid value(id not existed), or string instead instead of object.
+
+--a input with controller
+<apex:PageBlockSectionItem >
+      <apex:outputLabel value="Community Nick Name" for="commNickName"></apex:outputLabel>
+      <apex:inputField id="commNickName" value="{!user.CommunityNickname}"/>
+</apex:PageBlockSectionItem>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

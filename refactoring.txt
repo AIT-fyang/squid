@@ -1,0 +1,23 @@
+check the advancesizeseasonality
+what need to modify
+DAO
+wrapper
+
+list
+---------------------------------------
+accountstatus
+areacode
+basecaserate
+coveragepayment
+discount
+fli -- don't change ever
+fscmcagrad
+fscmcareg
+industry
+mcawhprates
+monerismonthly
+processor
+riskfee - check, not sure if it follows
+seasonality
+timeinbusiness
+timeincollections
