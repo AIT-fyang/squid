@@ -76,6 +76,69 @@ When execute DML command. It means there is a lookup field that has invalid valu
 
 
 
+-- Locking statement
+******************************************************************************************
+FOR UPDATE
+SOQL CMD:
+SELECT ID,NAME FROM ACCOUNT WHERE ID='123456' LIMIT 1 FOR UPDATE;
+
+
+
+
+
+
+-- Apex's AJAX toolkit
+******************************************************************************************
+<script src="/soap/ajax/15.0/connection.js" type="text/javascript"></script>
+<script src="/soap/ajax/15.0/apex.js" type="text/javascript"></script>
+
+apex:
+global class myClass { 
+  webService static Id makeContact(String lastName, Account a) { 
+        Contact c = new Contact(LastName = lastName, AccountId = a.Id); 
+        return c.id; 
+    }
+}
+
+js:
+var account = sforce.sObject("Account");
+var id = sforce.apex.execute("myClass","makeContact",
+                             {lastName:"Smith",
+                              a:account});
+
+
+-- reference:
+https://www.salesforce.com/us/developer/docs/apexcode/Content/apex_and_ajax.htm
+******************************************************************************************
+
+
+-- get external url
+System.URL.getSalesforceBaseUrl()
+for example:
+Id id = '1234';
+String link = System.URL.getSalesforceBaseUrl() + '/' + id;
+
+
+-- $Label: a global field type to used in Visualforce page
+<apex:page>
+   <apex:pageMessage severity="info" 
+   strength="1" 
+   summary="{!$Label.firstrun_helptext}" 
+   />
+</apex:page>
+
+
+-- Apex Message.sendEmail must be used in an action with a form submit
+AJAX call not working(Quote from Internet)
+
+
+
+
+
+
+
+
+
 
 
 
